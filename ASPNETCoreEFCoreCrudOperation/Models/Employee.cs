@@ -16,6 +16,6 @@ namespace ASPNETCoreEFCoreCrudOperation.Models
         public string LastName { get; set; }
         [MaxLength(5)]
         public string EmpCode { get; set; }
-        public string Poistion { get; set; }
+        public string Position { get; set; }
     }
 }

@@ -37,7 +37,7 @@ namespace ASPNETCoreEFCoreCrudOperation.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Poistion")
+                    b.Property<string>("Position")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");

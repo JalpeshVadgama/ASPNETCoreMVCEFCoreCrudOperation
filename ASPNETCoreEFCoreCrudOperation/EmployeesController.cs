@@ -53,7 +53,7 @@ namespace ASPNETCoreEFCoreCrudOperation
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,FirstName,LastName,EmpCode,Poistion")] Employee employee)
+        public async Task<IActionResult> Create([Bind("Id,FirstName,LastName,EmpCode,Position")] Employee employee)
         {
             if (ModelState.IsValid)
             {
@@ -85,7 +85,7 @@ namespace ASPNETCoreEFCoreCrudOperation
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,FirstName,LastName,EmpCode,Poistion")] Employee employee)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,FirstName,LastName,EmpCode,Position")] Employee employee)
         {
             if (id != employee.Id)
             {
