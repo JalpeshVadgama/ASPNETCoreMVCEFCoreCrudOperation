@@ -71,7 +71,6 @@ namespace ASPNETCoreEFCoreCrudOperation
             {
                 return NotFound();
             }
-
             var employee = await _context.Employees.FindAsync(id);
             if (employee == null)
             {
